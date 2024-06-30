@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Lista de Tarefas</title>
+    <!-- Scritpt -->
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <header class="container">
+      <nav>
+        <h1>Lista de Tarefas</h1>
+      </nav>
+    </header>
+    <form class="container">
+      <label for="task">O que devo fazer hoje?</label>
+      <input
+        type="text"
+        name="taks"
+        id="task"
+        class="task-input"
+        placeholder="Finalizar trabalho..."
+      />
+      <button type="submit" id="submitButton" title="adicionar tarefa a lista">
+        Salvar
+      </button>
+      <button id="clean-task" title="limpar lista de tarefas">Limpar</button>
+    </form>
+    <section class="container">
+      <ul id="taskList"></ul>
+    </section>
+    <footer class="container">
+      <p>Desenvolvido por &copy;GabrielPereira</p>
+    </footer>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  </body>
+</html>
